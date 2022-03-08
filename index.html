@@ -18,9 +18,26 @@
         background-position: center;
         aspect-ratio: 16/9;
       }
+      #gif-logo {
+        position: fixed;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        border-radius: 30px;
+        padding: 0 1rem;
+        background: #000;
+        img {
+          max-width: 100px;
+        }
+      }
     </style>
   </head>
   <body>
+    <div id="gif-logo">
+      <img
+        src="https://storage.googleapis.com/chydlx/codepen/random-gif-generator/giphy-logo.gif"
+        alt=""
+      />
+    </div>
     <div id="gif-wrap"></div>
     <script>
       // Initiate gifLoop for set interval
